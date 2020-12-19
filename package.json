@@ -1,7 +1,7 @@
 {
-  "name": "infnet-pizza",
+  "name": "i",
   "version": "1.0.0",
-  "description": "Projeto de CMS para site de Pizza",
+  "description": "Projeto CMS",
   "main": "server.js",
   "engines": {
     "node": "12.16.3"
@@ -14,7 +14,7 @@
   "keywords": [
     "express"
   ],
-  "author": "Thais Viana",
+  "author": "DGRM",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.781.0",
