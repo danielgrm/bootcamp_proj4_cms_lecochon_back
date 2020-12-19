@@ -32,9 +32,14 @@ router.get('/:id', async (req, res, next) => {
 // @access   Public
 router.patch('/:id', auth, files, async (req, res, next) => {
   try {
-      const product = await Product.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true })
+    req.body.last_modified_by = req.user.id
+    if(req.body.photo_name){
+      req.body.photo = `product/${req.body.photo_name}`
+    }  
+        const product = await Product.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true })
       if(product){
           res.json(product)
+
       }else{
           res.status(404).send({ "error": MSGS.PRODUCT404 }) 
       }

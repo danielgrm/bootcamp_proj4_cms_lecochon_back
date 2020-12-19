@@ -36,7 +36,7 @@ const ProductSchema = new mongoose.Schema({
     },
     discount_price_percent: {
         type : Number,
-        min: 1
+        min: 0
     },
     last_modified_by: {
         type: mongoose.Schema.Types.ObjectId,
