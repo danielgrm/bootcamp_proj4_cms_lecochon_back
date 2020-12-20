@@ -1,6 +1,6 @@
 const express = require('express');
 const Product = require('../../models/product');
-const { check, validationResult } = require('express-validator');
+const { validationResult } = require('express-validator');
 const router = express.Router();
 const MSGS = require('../../messages')
 const files = require('../../middleware/file')

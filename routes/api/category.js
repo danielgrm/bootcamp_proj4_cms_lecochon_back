@@ -3,7 +3,7 @@ const Category = require('../../models/category');
 const { check, validationResult } = require('express-validator');
 const router = express.Router();
 const MSGS = require('../../messages')
-const files = require('../../middleware/file')
+//const files = require('../../middleware/file')
 
 
 // @route    GET /category/:id
